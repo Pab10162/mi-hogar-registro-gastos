@@ -17,7 +17,7 @@ Tecnologías
 - CSS3
 - JavaScript (vanilla, sin frameworks ni librerías externas)
 
-También podés probarlo directamente desde GitHub Pages: **[Ver demo en vivo](https://pab10162.github.io/mi-hogar-registro-gastos/)**
+[Ver demo en vivo](https://pab10162.github.io/mi-hogar-registro-gastos/)
 
 Estructura del proyecto
 
