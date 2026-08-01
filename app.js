@@ -25,12 +25,11 @@ const tagClases = {
   "Otro":       "tag-other",
 }
 
-//-------
 // ─────────────────────────────────────────
 //  FILTRO DE MES
 // ─────────────────────────────────────────
 
-// Devuelve solo los movimientos del mes y año que está viendo el usuario
+
 function getMovimientosMes() {
   return movimientos.filter(function(mov) {
     let fecha = new Date(mov.fecha)
