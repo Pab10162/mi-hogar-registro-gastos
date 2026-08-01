@@ -19,18 +19,10 @@ Tecnologías
 
 [Ver demo en vivo](https://pab10162.github.io/mi-hogar-registro-gastos/)
 
-Estructura del proyecto
-
-mi-hogar-registro-gastos/
-├── index.html   # Estructura de la app
-├── style.css    # Estilos visuales
-└── app.js       # Lógica: manejo de movimientos, render y persistencia
-
 Mejoras a futuro
 
 - Gráficos de estadísticas por categoría.
 - Gestión de múltiples miembros del hogar con roles.
 - Exportación de movimientos a Excel/PDF.
-
 
 Proyecto desarrollado como práctica de desarrollo frontend.
