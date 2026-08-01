@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Hogar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar izquierdo -->
+    <aside class="sidebar">  
+      <div class="sidebar-brand">
+        <h2>Mi Hogar</h2>
+      </div>
+      <nav>
+        <a href="#" class="nav-item active">Resumen</a>
+        <a href="#" class="nav-item">Movimientos</a>
+        <a href="#" class="nav-item">Estadísticas</a>
+        <a href="#" class="nav-item">Miembros</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main">
+      <div class="main-header">
+        <h1 id="titulo-mes">Mayo 2026</h1>
+        <div class="nav-mes">
+          <button type="button" id="btn-mes-anterior">‹</button>
+          <button type="button" id="btn-mes-siguiente">›</button>
+        </div>
+      </div>
+            <div class="cards">
+  <div class="card">
+    <span class="card-label">Ingresos</span>
+    <span class="card-amount income" id="total-ingresos">$0</span>
+  </div>
+  <div class="card">
+    <span class="card-label">Gastos</span>
+    <span class="card-amount expense" id="total-gastos">$0</span>
+  </div>
+  <div class="card">
+    <span class="card-label">Ahorro</span>
+    <span class="card-amount savings" id="total-ahorro">$0</span>
+  </div>
+</div>
+
+<div class="form-container">
+  <input type="text" id="input-descripcion" placeholder="Descripción">
+  
+  <select id="input-categoria">
+    <option value="Comida">Comida</option>
+    <option value="Transporte">Transporte</option>
+    <option value="Servicios">Servicios</option>
+    <option value="Ingreso">Ingreso</option>
+    <option value="Combustible">Combustible</option>
+    <option value="Otro">Otro</option>
+  </select>
+
+  <input type="text" id="input-quien" placeholder="Quién">
+  
+  <input type="number" id="input-monto" placeholder="Monto">
+
+  <select id="input-tipo">
+    <option value="gasto">Gasto</option>
+    <option value="ingreso">Ingreso</option>
+  </select>
+
+  <button type="button" id="btn-agregar">+ Agregar</button>
+</div>
+
+        <!-- MOVIMIENTOS -->
+        <div class="movements">
+    <table>
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Categoría</th>
+                <th>Quién</th>
+                <th>Monto</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+    <tbody id="movements-list"></tbody>
+    
+    </table>
+</div>
+    </main>
+
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
